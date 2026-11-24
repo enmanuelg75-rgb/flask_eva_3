@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Ejercicios Flask{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="{{ url_for('index') }}"><span class="brand-mark">F</span><span>Fundamentos de Python<small>Programación Web · Flask</small></span></a></header>
+  <main class="shell">{% block content %}{% endblock %}</main>
+  <footer>Aplicación de ejercicios · Python + Flask</footer>
+</body>
+</html>

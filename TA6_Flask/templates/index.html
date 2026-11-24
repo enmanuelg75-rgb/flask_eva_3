@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Inicio · Ejercicios Flask{% endblock %}
+{% block content %}
+<section class="hero"><p class="eyebrow">ENCARGO 3 · EVALUACIÓN UNIDAD 3</p><h1>Ejercicios de Python</h1><p class="intro">Elige un ejercicio para ingresar tus datos y ver el resultado.</p></section>
+<section class="cards">
+  <a class="card" href="{{ url_for('ejercicio1') }}"><span class="card-icon">01</span><span class="card-copy"><strong>Promedio y aprobación</strong><small>Evalúa tres notas y el porcentaje de asistencia.</small></span><span class="arrow">→</span></a>
+  <a class="card" href="{{ url_for('ejercicio2') }}"><span class="card-icon">02</span><span class="card-copy"><strong>Nombre más largo</strong><small>Compara tres nombres y cuenta sus caracteres.</small></span><span class="arrow">→</span></a>
+</section>
+{% endblock %}
